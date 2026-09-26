@@ -1,0 +1,6 @@
+{
+  "name": "Royal Cards Club: Дурак, Покер и 21",
+  "description": "Карточный клуб с режимами игры в Дурака, Техасский Холдем и 21 с динамическим расчетом вероятностей и азартным геймплеем.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #111113;
+  --ink: #f2efeb;
+  --accent: #ffdb58;
+  --ink-faint: rgba(242, 239, 235, 0.1);
+  --surface: #1a1a1c;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-mono, pre, code {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+.label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+  font-weight: 700;
+}
+
+.game-felt {
+  background-color: #0d2b1d;
+  background-image: radial-gradient(rgba(242, 239, 235, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border: 1.5px solid var(--ink);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(242, 239, 235, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(242, 239, 235, 0.4);
+}
+
